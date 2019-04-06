@@ -14,6 +14,7 @@
 		761E7A4C22583E4C0026C9F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 761E7A4A22583E4C0026C9F0 /* LaunchScreen.storyboard */; };
 		761E7A5722583E4C0026C9F0 /* IBM_iBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E7A5622583E4C0026C9F0 /* IBM_iBankTests.swift */; };
 		761E7A6222583E4C0026C9F0 /* IBM_iBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E7A6122583E4C0026C9F0 /* IBM_iBankUITests.swift */; };
+		761E7A7022583F4E0026C9F0 /* HomeViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E7A6F22583F4E0026C9F0 /* HomeViewer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		761E7A5D22583E4C0026C9F0 /* IBM iBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IBM iBankUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761E7A6122583E4C0026C9F0 /* IBM_iBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBM_iBankUITests.swift; sourceTree = "<group>"; };
 		761E7A6322583E4C0026C9F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		761E7A6F22583F4E0026C9F0 /* HomeViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				761E7A4822583E4C0026C9F0 /* Assets.xcassets */,
 				761E7A4A22583E4C0026C9F0 /* LaunchScreen.storyboard */,
 				761E7A4D22583E4C0026C9F0 /* Info.plist */,
+				761E7A6F22583F4E0026C9F0 /* HomeViewer.swift */,
 			);
 			path = "IBM iBank";
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				761E7A7022583F4E0026C9F0 /* HomeViewer.swift in Sources */,
 				761E7A4422583E4A0026C9F0 /* ViewController.swift in Sources */,
 				761E7A4222583E4A0026C9F0 /* AppDelegate.swift in Sources */,
 			);
@@ -435,6 +439,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X5W4JJDGTV;
 				INFOPLIST_FILE = "IBM iBank/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +458,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X5W4JJDGTV;
 				INFOPLIST_FILE = "IBM iBank/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
