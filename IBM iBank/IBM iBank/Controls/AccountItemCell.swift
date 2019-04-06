@@ -15,6 +15,10 @@ class AccountItemCell: BaseUICollectioViewCell {
         return "\(AccountItemCell.self)"
     }
     
+    class var preferredHeight: CGFloat {
+        return 80
+    }
+    
     //MARK: Outlets
     private lazy var itemView: AccountItemView! = AccountItemView()
     

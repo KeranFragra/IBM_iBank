@@ -13,4 +13,5 @@ struct AccountItemModel {
     let title: String
     let descriptionValue: String
     let hasAccessory: Bool
+    let isDescriptionEditable: Bool
 }

@@ -37,6 +37,7 @@ class AccountItemView: BaseUIView {
                 self?.titleLabel.text = model.title
                 self?.descriptionTextField.text = model.descriptionValue
                 self?.hasAccessoryImageView = model.hasAccessory
+                self?.isDescriptionEditable = model.isDescriptionEditable
             }
         }
     }
@@ -79,7 +80,8 @@ class AccountItemView: BaseUIView {
     
     private func setupAccessoryImageView() {
         accessoryImageView.translatesAutoresizingMaskIntoConstraints = false
-        accessoryImageView.image = #imageLiteral(resourceName: "accessory_next")
+        accessoryImageView.image = #imageLiteral(resourceName: "accessory_next").withRenderingMode(.alwaysTemplate)
+        accessoryImageView.tintColor = .white
         accessoryImageView.contentMode = .scaleAspectFit
         addSubview(accessoryImageView)
         

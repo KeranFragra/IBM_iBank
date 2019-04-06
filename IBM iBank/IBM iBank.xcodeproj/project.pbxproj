@@ -21,6 +21,10 @@
 		761E7A7922584D330026C9F0 /* BaseUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E7A7822584D330026C9F0 /* BaseUICollectionViewCell.swift */; };
 		761E7A7B22584D930026C9F0 /* AccountItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E7A7A22584D930026C9F0 /* AccountItemCell.swift */; };
 		761E7A7E225851150026C9F0 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E7A7D225851150026C9F0 /* Styles.swift */; };
+		761E7A81225852EB0026C9F0 /* InputScreenViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E7A80225852EB0026C9F0 /* InputScreenViewer.swift */; };
+		761E7A85225853AF0026C9F0 /* BaseUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E7A84225853AF0026C9F0 /* BaseUIViewController.swift */; };
+		761E7A87225853ED0026C9F0 /* InputScreenViewer+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E7A86225853ED0026C9F0 /* InputScreenViewer+CollectionView.swift */; };
+		761E7A8A225854F90026C9F0 /* InputScreenViewer+Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E7A89225854F90026C9F0 /* InputScreenViewer+Views.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,10 @@
 		761E7A7822584D330026C9F0 /* BaseUICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUICollectionViewCell.swift; sourceTree = "<group>"; };
 		761E7A7A22584D930026C9F0 /* AccountItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountItemCell.swift; sourceTree = "<group>"; };
 		761E7A7D225851150026C9F0 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		761E7A80225852EB0026C9F0 /* InputScreenViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputScreenViewer.swift; sourceTree = "<group>"; };
+		761E7A84225853AF0026C9F0 /* BaseUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIViewController.swift; sourceTree = "<group>"; };
+		761E7A86225853ED0026C9F0 /* InputScreenViewer+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InputScreenViewer+CollectionView.swift"; sourceTree = "<group>"; };
+		761E7A89225854F90026C9F0 /* InputScreenViewer+Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InputScreenViewer+Views.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +159,7 @@
 				761E7A7622584B6F0026C9F0 /* AccountItemModel.swift */,
 				761E7A7822584D330026C9F0 /* BaseUICollectionViewCell.swift */,
 				761E7A7A22584D930026C9F0 /* AccountItemCell.swift */,
+				761E7A84225853AF0026C9F0 /* BaseUIViewController.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -166,8 +175,19 @@
 		761E7A7F225851E80026C9F0 /* Input Screen */ = {
 			isa = PBXGroup;
 			children = (
+				761E7A88225854B00026C9F0 /* Extensions */,
+				761E7A80225852EB0026C9F0 /* InputScreenViewer.swift */,
 			);
 			path = "Input Screen";
+			sourceTree = "<group>";
+		};
+		761E7A88225854B00026C9F0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				761E7A86225853ED0026C9F0 /* InputScreenViewer+CollectionView.swift */,
+				761E7A89225854F90026C9F0 /* InputScreenViewer+Views.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,14 +321,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				761E7A8A225854F90026C9F0 /* InputScreenViewer+Views.swift in Sources */,
 				761E7A7E225851150026C9F0 /* Styles.swift in Sources */,
 				761E7A75225841830026C9F0 /* BaseUIView.swift in Sources */,
 				761E7A7022583F4E0026C9F0 /* HomeViewer.swift in Sources */,
+				761E7A85225853AF0026C9F0 /* BaseUIViewController.swift in Sources */,
 				761E7A4422583E4A0026C9F0 /* ViewController.swift in Sources */,
 				761E7A4222583E4A0026C9F0 /* AppDelegate.swift in Sources */,
 				761E7A7B22584D930026C9F0 /* AccountItemCell.swift in Sources */,
 				761E7A7722584B6F0026C9F0 /* AccountItemModel.swift in Sources */,
 				761E7A73225841610026C9F0 /* AccountItemView.swift in Sources */,
+				761E7A87225853ED0026C9F0 /* InputScreenViewer+CollectionView.swift in Sources */,
+				761E7A81225852EB0026C9F0 /* InputScreenViewer.swift in Sources */,
 				761E7A7922584D330026C9F0 /* BaseUICollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
