@@ -32,7 +32,8 @@ extension InputScreenViewer: UICollectionViewDelegate, UICollectionViewDataSourc
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width, height: AccountItemCell.preferredHeight)
+        let insets = collectionView.contentInset
+        return CGSize(width: collectionView.frame.width - insets.left - insets.right, height: AccountItemCell.preferredHeight)
     }
     
 }

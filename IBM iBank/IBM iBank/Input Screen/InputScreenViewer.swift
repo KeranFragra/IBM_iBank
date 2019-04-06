@@ -13,6 +13,7 @@ class InputScreenViewer: BaseUIViewController {
     
     //MARK: - Outlets
     var collectionView: UICollectionView!
+    lazy var mainButton: UIButton! = UIButton(type: .system)
     
     let ROW_COUNT = 4 //TODO: Make 6 when ui is ready.
     
@@ -27,6 +28,10 @@ class InputScreenViewer: BaseUIViewController {
         prepareDummyData()
         
         setupCollectionView()
+        setupMainButton()
+        
+        // Dismiss keyboard
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard(_:))))
     }
     
     private func prepareDummyData() {
@@ -41,5 +46,10 @@ class InputScreenViewer: BaseUIViewController {
         
         model = AccountItemModel(title: "Receiving Amount", descriptionValue: "INR 50,780.00", hasAccessory: false, isDescriptionEditable: true)
         models.append(model)
+    }
+    
+    @objc
+    func dismissKeyboard(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
     }
 }
