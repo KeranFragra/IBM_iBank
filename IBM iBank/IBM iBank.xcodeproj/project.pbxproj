@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		761E7A4222583E4A0026C9F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E7A4122583E4A0026C9F0 /* AppDelegate.swift */; };
+		761E7A4422583E4A0026C9F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E7A4322583E4A0026C9F0 /* ViewController.swift */; };
+		761E7A4722583E4A0026C9F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 761E7A4522583E4A0026C9F0 /* Main.storyboard */; };
+		761E7A4922583E4C0026C9F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 761E7A4822583E4C0026C9F0 /* Assets.xcassets */; };
+		761E7A4C22583E4C0026C9F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 761E7A4A22583E4C0026C9F0 /* LaunchScreen.storyboard */; };
+		761E7A5722583E4C0026C9F0 /* IBM_iBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E7A5622583E4C0026C9F0 /* IBM_iBankTests.swift */; };
+		761E7A6222583E4C0026C9F0 /* IBM_iBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E7A6122583E4C0026C9F0 /* IBM_iBankUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		761E7A5322583E4C0026C9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 761E7A3622583E4A0026C9F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 761E7A3D22583E4A0026C9F0;
+			remoteInfo = "IBM iBank";
+		};
+		761E7A5E22583E4C0026C9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 761E7A3622583E4A0026C9F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 761E7A3D22583E4A0026C9F0;
+			remoteInfo = "IBM iBank";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		761E7A3E22583E4A0026C9F0 /* IBM iBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IBM iBank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		761E7A4122583E4A0026C9F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		761E7A4322583E4A0026C9F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		761E7A4622583E4A0026C9F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		761E7A4822583E4C0026C9F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		761E7A4B22583E4C0026C9F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		761E7A4D22583E4C0026C9F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		761E7A5222583E4C0026C9F0 /* IBM iBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IBM iBankTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		761E7A5622583E4C0026C9F0 /* IBM_iBankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBM_iBankTests.swift; sourceTree = "<group>"; };
+		761E7A5822583E4C0026C9F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		761E7A5D22583E4C0026C9F0 /* IBM iBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IBM iBankUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		761E7A6122583E4C0026C9F0 /* IBM_iBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBM_iBankUITests.swift; sourceTree = "<group>"; };
+		761E7A6322583E4C0026C9F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		761E7A3B22583E4A0026C9F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		761E7A4F22583E4C0026C9F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		761E7A5A22583E4C0026C9F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		761E7A3522583E4A0026C9F0 = {
+			isa = PBXGroup;
+			children = (
+				761E7A4022583E4A0026C9F0 /* IBM iBank */,
+				761E7A5522583E4C0026C9F0 /* IBM iBankTests */,
+				761E7A6022583E4C0026C9F0 /* IBM iBankUITests */,
+				761E7A3F22583E4A0026C9F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		761E7A3F22583E4A0026C9F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				761E7A3E22583E4A0026C9F0 /* IBM iBank.app */,
+				761E7A5222583E4C0026C9F0 /* IBM iBankTests.xctest */,
+				761E7A5D22583E4C0026C9F0 /* IBM iBankUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		761E7A4022583E4A0026C9F0 /* IBM iBank */ = {
+			isa = PBXGroup;
+			children = (
+				761E7A4122583E4A0026C9F0 /* AppDelegate.swift */,
+				761E7A4322583E4A0026C9F0 /* ViewController.swift */,
+				761E7A4522583E4A0026C9F0 /* Main.storyboard */,
+				761E7A4822583E4C0026C9F0 /* Assets.xcassets */,
+				761E7A4A22583E4C0026C9F0 /* LaunchScreen.storyboard */,
+				761E7A4D22583E4C0026C9F0 /* Info.plist */,
+			);
+			path = "IBM iBank";
+			sourceTree = "<group>";
+		};
+		761E7A5522583E4C0026C9F0 /* IBM iBankTests */ = {
+			isa = PBXGroup;
+			children = (
+				761E7A5622583E4C0026C9F0 /* IBM_iBankTests.swift */,
+				761E7A5822583E4C0026C9F0 /* Info.plist */,
+			);
+			path = "IBM iBankTests";
+			sourceTree = "<group>";
+		};
+		761E7A6022583E4C0026C9F0 /* IBM iBankUITests */ = {
+			isa = PBXGroup;
+			children = (
+				761E7A6122583E4C0026C9F0 /* IBM_iBankUITests.swift */,
+				761E7A6322583E4C0026C9F0 /* Info.plist */,
+			);
+			path = "IBM iBankUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		761E7A3D22583E4A0026C9F0 /* IBM iBank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 761E7A6622583E4C0026C9F0 /* Build configuration list for PBXNativeTarget "IBM iBank" */;
+			buildPhases = (
+				761E7A3A22583E4A0026C9F0 /* Sources */,
+				761E7A3B22583E4A0026C9F0 /* Frameworks */,
+				761E7A3C22583E4A0026C9F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IBM iBank";
+			productName = "IBM iBank";
+			productReference = 761E7A3E22583E4A0026C9F0 /* IBM iBank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		761E7A5122583E4C0026C9F0 /* IBM iBankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 761E7A6922583E4C0026C9F0 /* Build configuration list for PBXNativeTarget "IBM iBankTests" */;
+			buildPhases = (
+				761E7A4E22583E4C0026C9F0 /* Sources */,
+				761E7A4F22583E4C0026C9F0 /* Frameworks */,
+				761E7A5022583E4C0026C9F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				761E7A5422583E4C0026C9F0 /* PBXTargetDependency */,
+			);
+			name = "IBM iBankTests";
+			productName = "IBM iBankTests";
+			productReference = 761E7A5222583E4C0026C9F0 /* IBM iBankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		761E7A5C22583E4C0026C9F0 /* IBM iBankUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 761E7A6C22583E4C0026C9F0 /* Build configuration list for PBXNativeTarget "IBM iBankUITests" */;
+			buildPhases = (
+				761E7A5922583E4C0026C9F0 /* Sources */,
+				761E7A5A22583E4C0026C9F0 /* Frameworks */,
+				761E7A5B22583E4C0026C9F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				761E7A5F22583E4C0026C9F0 /* PBXTargetDependency */,
+			);
+			name = "IBM iBankUITests";
+			productName = "IBM iBankUITests";
+			productReference = 761E7A5D22583E4C0026C9F0 /* IBM iBankUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		761E7A3622583E4A0026C9F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Joemar Brillo";
+				TargetAttributes = {
+					761E7A3D22583E4A0026C9F0 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					761E7A5122583E4C0026C9F0 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 761E7A3D22583E4A0026C9F0;
+					};
+					761E7A5C22583E4C0026C9F0 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 761E7A3D22583E4A0026C9F0;
+					};
+				};
+			};
+			buildConfigurationList = 761E7A3922583E4A0026C9F0 /* Build configuration list for PBXProject "IBM iBank" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 761E7A3522583E4A0026C9F0;
+			productRefGroup = 761E7A3F22583E4A0026C9F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				761E7A3D22583E4A0026C9F0 /* IBM iBank */,
+				761E7A5122583E4C0026C9F0 /* IBM iBankTests */,
+				761E7A5C22583E4C0026C9F0 /* IBM iBankUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		761E7A3C22583E4A0026C9F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				761E7A4C22583E4C0026C9F0 /* LaunchScreen.storyboard in Resources */,
+				761E7A4922583E4C0026C9F0 /* Assets.xcassets in Resources */,
+				761E7A4722583E4A0026C9F0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		761E7A5022583E4C0026C9F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		761E7A5B22583E4C0026C9F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		761E7A3A22583E4A0026C9F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				761E7A4422583E4A0026C9F0 /* ViewController.swift in Sources */,
+				761E7A4222583E4A0026C9F0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		761E7A4E22583E4C0026C9F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				761E7A5722583E4C0026C9F0 /* IBM_iBankTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		761E7A5922583E4C0026C9F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				761E7A6222583E4C0026C9F0 /* IBM_iBankUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		761E7A5422583E4C0026C9F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 761E7A3D22583E4A0026C9F0 /* IBM iBank */;
+			targetProxy = 761E7A5322583E4C0026C9F0 /* PBXContainerItemProxy */;
+		};
+		761E7A5F22583E4C0026C9F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 761E7A3D22583E4A0026C9F0 /* IBM iBank */;
+			targetProxy = 761E7A5E22583E4C0026C9F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		761E7A4522583E4A0026C9F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				761E7A4622583E4A0026C9F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		761E7A4A22583E4C0026C9F0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				761E7A4B22583E4C0026C9F0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		761E7A6422583E4C0026C9F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		761E7A6522583E4C0026C9F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		761E7A6722583E4C0026C9F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5W4JJDGTV;
+				INFOPLIST_FILE = "IBM iBank/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.IBM-iBank";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		761E7A6822583E4C0026C9F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5W4JJDGTV;
+				INFOPLIST_FILE = "IBM iBank/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.IBM-iBank";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		761E7A6A22583E4C0026C9F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5W4JJDGTV;
+				INFOPLIST_FILE = "IBM iBankTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.IBM-iBankTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IBM iBank.app/IBM iBank";
+			};
+			name = Debug;
+		};
+		761E7A6B22583E4C0026C9F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5W4JJDGTV;
+				INFOPLIST_FILE = "IBM iBankTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.IBM-iBankTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IBM iBank.app/IBM iBank";
+			};
+			name = Release;
+		};
+		761E7A6D22583E4C0026C9F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5W4JJDGTV;
+				INFOPLIST_FILE = "IBM iBankUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.IBM-iBankUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "IBM iBank";
+			};
+			name = Debug;
+		};
+		761E7A6E22583E4C0026C9F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5W4JJDGTV;
+				INFOPLIST_FILE = "IBM iBankUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.IBM-iBankUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "IBM iBank";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		761E7A3922583E4A0026C9F0 /* Build configuration list for PBXProject "IBM iBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				761E7A6422583E4C0026C9F0 /* Debug */,
+				761E7A6522583E4C0026C9F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		761E7A6622583E4C0026C9F0 /* Build configuration list for PBXNativeTarget "IBM iBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				761E7A6722583E4C0026C9F0 /* Debug */,
+				761E7A6822583E4C0026C9F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		761E7A6922583E4C0026C9F0 /* Build configuration list for PBXNativeTarget "IBM iBankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				761E7A6A22583E4C0026C9F0 /* Debug */,
+				761E7A6B22583E4C0026C9F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		761E7A6C22583E4C0026C9F0 /* Build configuration list for PBXNativeTarget "IBM iBankUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				761E7A6D22583E4C0026C9F0 /* Debug */,
+				761E7A6E22583E4C0026C9F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 761E7A3622583E4A0026C9F0 /* Project object */;
+}
