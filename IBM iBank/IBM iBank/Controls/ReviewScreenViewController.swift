@@ -13,12 +13,14 @@ class ReviewScreenViewController: UIViewController {
     var collectionView: UICollectionView!
     
     lazy var models: [ReviewItemModel] = [ReviewItemModel]()
+    let confirmButton = UIButton(type: UIButton.ButtonType.system) as UIButton
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         prepareDummyData()
         setupCollectionView()
+        initConfirmButton()
         
         view.backgroundColor = .white
         
@@ -43,12 +45,31 @@ class ReviewScreenViewController: UIViewController {
         activate(constraint: collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor))
         activate(constraint: collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor))
         
-        
         collectionView.delegate = self
         collectionView.dataSource = self
         
-    
         collectionView.register(ReviewItemCollectionViewCell.self, forCellWithReuseIdentifier: ReviewItemCollectionViewCell.identifier)
+    }
+    
+    func initConfirmButton(){
+        confirmButton.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(confirmButton)
+        activate(constraint: confirmButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20))
+        activate(constraint: confirmButton.heightAnchor.constraint(equalToConstant: 60))
+        activate(constraint: confirmButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20))
+        activate(constraint: confirmButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20))
+        
+        confirmButton.frame = CGRect(x:50, y:100, width:150, height:45)
+        confirmButton.backgroundColor = UIColor.lightGray
+        confirmButton.setTitle("CONFIRM", for: UIControl.State.normal)
+        confirmButton.tintColor = UIColor.black
+        confirmButton.addTarget(self, action: #selector(self.confirmAction(_:)), for: .touchUpInside)
+        self.view.addSubview(confirmButton)
+    }
+    
+    @objc func confirmAction(_ sender:UIButton!)
+    {
+        print("Confirm tapped")
     }
     
     private func prepareDummyData() {

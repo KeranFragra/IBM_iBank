@@ -39,6 +39,4 @@ class ReviewItemCollectionViewCell: UICollectionViewCell {
     func activate(constraint: NSLayoutConstraint, isActive: Bool = true) {
         constraint.isActive = isActive
     }
-    
-    
 }
