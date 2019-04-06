@@ -15,6 +15,12 @@
 		761E7A5722583E4C0026C9F0 /* IBM_iBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E7A5622583E4C0026C9F0 /* IBM_iBankTests.swift */; };
 		761E7A6222583E4C0026C9F0 /* IBM_iBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E7A6122583E4C0026C9F0 /* IBM_iBankUITests.swift */; };
 		761E7A7022583F4E0026C9F0 /* HomeViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E7A6F22583F4E0026C9F0 /* HomeViewer.swift */; };
+		761E7A73225841610026C9F0 /* AccountItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E7A72225841610026C9F0 /* AccountItemView.swift */; };
+		761E7A75225841830026C9F0 /* BaseUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E7A74225841830026C9F0 /* BaseUIView.swift */; };
+		761E7A7722584B6F0026C9F0 /* AccountItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E7A7622584B6F0026C9F0 /* AccountItemModel.swift */; };
+		761E7A7922584D330026C9F0 /* BaseUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E7A7822584D330026C9F0 /* BaseUICollectionViewCell.swift */; };
+		761E7A7B22584D930026C9F0 /* AccountItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E7A7A22584D930026C9F0 /* AccountItemCell.swift */; };
+		761E7A7E225851150026C9F0 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761E7A7D225851150026C9F0 /* Styles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		761E7A6122583E4C0026C9F0 /* IBM_iBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBM_iBankUITests.swift; sourceTree = "<group>"; };
 		761E7A6322583E4C0026C9F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		761E7A6F22583F4E0026C9F0 /* HomeViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewer.swift; sourceTree = "<group>"; };
+		761E7A72225841610026C9F0 /* AccountItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountItemView.swift; sourceTree = "<group>"; };
+		761E7A74225841830026C9F0 /* BaseUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIView.swift; sourceTree = "<group>"; };
+		761E7A7622584B6F0026C9F0 /* AccountItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountItemModel.swift; sourceTree = "<group>"; };
+		761E7A7822584D330026C9F0 /* BaseUICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUICollectionViewCell.swift; sourceTree = "<group>"; };
+		761E7A7A22584D930026C9F0 /* AccountItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountItemCell.swift; sourceTree = "<group>"; };
+		761E7A7D225851150026C9F0 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,9 @@
 		761E7A4022583E4A0026C9F0 /* IBM iBank */ = {
 			isa = PBXGroup;
 			children = (
+				761E7A7F225851E80026C9F0 /* Input Screen */,
+				761E7A7C225851040026C9F0 /* Resources */,
+				761E7A712258410B0026C9F0 /* Controls */,
 				761E7A4122583E4A0026C9F0 /* AppDelegate.swift */,
 				761E7A4322583E4A0026C9F0 /* ViewController.swift */,
 				761E7A4522583E4A0026C9F0 /* Main.storyboard */,
@@ -126,6 +141,33 @@
 				761E7A6322583E4C0026C9F0 /* Info.plist */,
 			);
 			path = "IBM iBankUITests";
+			sourceTree = "<group>";
+		};
+		761E7A712258410B0026C9F0 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				761E7A72225841610026C9F0 /* AccountItemView.swift */,
+				761E7A74225841830026C9F0 /* BaseUIView.swift */,
+				761E7A7622584B6F0026C9F0 /* AccountItemModel.swift */,
+				761E7A7822584D330026C9F0 /* BaseUICollectionViewCell.swift */,
+				761E7A7A22584D930026C9F0 /* AccountItemCell.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		761E7A7C225851040026C9F0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				761E7A7D225851150026C9F0 /* Styles.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		761E7A7F225851E80026C9F0 /* Input Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Input Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +301,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				761E7A7E225851150026C9F0 /* Styles.swift in Sources */,
+				761E7A75225841830026C9F0 /* BaseUIView.swift in Sources */,
 				761E7A7022583F4E0026C9F0 /* HomeViewer.swift in Sources */,
 				761E7A4422583E4A0026C9F0 /* ViewController.swift in Sources */,
 				761E7A4222583E4A0026C9F0 /* AppDelegate.swift in Sources */,
+				761E7A7B22584D930026C9F0 /* AccountItemCell.swift in Sources */,
+				761E7A7722584B6F0026C9F0 /* AccountItemModel.swift in Sources */,
+				761E7A73225841610026C9F0 /* AccountItemView.swift in Sources */,
+				761E7A7922584D330026C9F0 /* BaseUICollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
