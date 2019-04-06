@@ -2,7 +2,7 @@
 //  CompletionScreenViewController.swift
 //  IBM iBank
 //
-//  Created by HERSOM on 6/4/19.
+//  Created by Keran on 6/4/19.
 //  Copyright © 2019 Joemar Brillo. All rights reserved.
 //
 
