@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 /// The main/home screen for the app.
-class HomeViewer: BaseUIViewController {
+class HomeViewer: UITabBarController {
     
     var testHitButton: UIButton! = UIButton(type: .system)
     
