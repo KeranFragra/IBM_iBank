@@ -19,7 +19,7 @@ class CompletionScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        prepareDummyData()
+        setCompletionItemDummyData()
         setupCollectionView()
         initShareDetailsButton()
         initGoToHomeButton()
@@ -57,7 +57,8 @@ class CompletionScreenViewController: UIViewController {
         constraint.isActive = isActive
     }
     
-    private func prepareDummyData() {
+    //TO DO : Remove this when there is data from Json
+    private func setCompletionItemDummyData() {
         var model = ReviewItemModel(title: "Source Account", descriptionValue: "My Saving Account (123-456-789)")
         models.append(model)
         
@@ -96,12 +97,14 @@ extension CompletionScreenViewController: UICollectionViewDelegate, UICollection
     }
     
     func initShareDetailsButton(){
+        //Constraints for Share Details Button
         shareDetailsButton.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(shareDetailsButton)
         activate(constraint: shareDetailsButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20))
         activate(constraint: shareDetailsButton.heightAnchor.constraint(equalToConstant: 60))
         activate(constraint: shareDetailsButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20))
         activate(constraint: shareDetailsButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20))
+        
         shareDetailsButton.backgroundColor = UIColor.lightGray
         shareDetailsButton.setTitle("SHARE DETAILS", for: UIControl.State.normal)
         shareDetailsButton.tintColor = UIColor.black
@@ -110,12 +113,15 @@ extension CompletionScreenViewController: UICollectionViewDelegate, UICollection
         
     }
     
+    //This function is called when Share Details Button is clicked
     @objc func shareDetailsButtonAction(_ sender:UIButton!)
     {
         print("anotherTransactionButtonAction tapped")
     }
     
+    
     func initAnotherTrasactionButton(){
+        //Constraints for Make Another Transfer Button
         makeAnotherTransactionButton.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(makeAnotherTransactionButton)
         
@@ -123,6 +129,8 @@ extension CompletionScreenViewController: UICollectionViewDelegate, UICollection
         activate(constraint: makeAnotherTransactionButton.heightAnchor.constraint(equalToConstant: 60))
         activate(constraint: makeAnotherTransactionButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20))
         activate(constraint: makeAnotherTransactionButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20))
+        
+        
         makeAnotherTransactionButton.backgroundColor = UIColor.lightGray
         makeAnotherTransactionButton.setTitle("MAKE ANOTHER TRANSFER", for: UIControl.State.normal)
         makeAnotherTransactionButton.tintColor = UIColor.black
@@ -132,12 +140,14 @@ extension CompletionScreenViewController: UICollectionViewDelegate, UICollection
         
     }
     
+    //This Function is called when Make Another Transfer Button is clicked
     @objc func anotherTransactionButtonAction(_ sender:UIButton!)
     {
         print("anotherTransactionButtonAction tapped")
     }
     
     func initGoToHomeButton(){
+        //Constraints for Go to Home Button
         goToHomeButton.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(goToHomeButton)
         
@@ -153,6 +163,7 @@ extension CompletionScreenViewController: UICollectionViewDelegate, UICollection
         self.view.addSubview(goToHomeButton)
     }
     
+    //This function is called when Go TO Home Button is clicked
     @objc func goToHomeAction(_ sender:UIButton!)
     {
         print("goToHomeAction tapped")

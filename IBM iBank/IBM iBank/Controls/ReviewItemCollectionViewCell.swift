@@ -26,6 +26,7 @@ class ReviewItemCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //Constraints for the Review View
     private func setupreviewView() {
         reviewView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(reviewView)

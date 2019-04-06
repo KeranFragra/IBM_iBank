@@ -18,7 +18,7 @@ class ReviewScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        prepareDummyData()
+        SetReviewItemDummyData()
         setupCollectionView()
         initConfirmButton()
         
@@ -52,6 +52,7 @@ class ReviewScreenViewController: UIViewController {
     }
     
     func initConfirmButton(){
+        //Constraints for Confirm Button
         confirmButton.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(confirmButton)
         activate(constraint: confirmButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20))
@@ -67,12 +68,14 @@ class ReviewScreenViewController: UIViewController {
         self.view.addSubview(confirmButton)
     }
     
+    //This function is called when the confirm method is clicked
     @objc func confirmAction(_ sender:UIButton!)
     {
         print("Confirm tapped")
     }
     
-    private func prepareDummyData() {
+    //TO DO : Remove this when there is data from Json
+    private func SetReviewItemDummyData() {
         var model = ReviewItemModel(title: "Source Account", descriptionValue: "My Saving Account (123-456-789)")
         models.append(model)
         
@@ -100,6 +103,7 @@ extension ReviewScreenViewController: UICollectionViewDelegate, UICollectionView
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ReviewItemCollectionViewCell.identifier, for: indexPath) as! ReviewItemCollectionViewCell
+        //Assign Text value to the labels in the Cell
         cell.reviewView.firstLabel.text = models[indexPath.item].title
         cell.reviewView.secondLabel.text = models[indexPath.item].descriptionValue
         
