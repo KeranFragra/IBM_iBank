@@ -15,13 +15,23 @@ class SearchItemHeaderView: UICollectionReusableView {
         return "\(SearchItemHeaderView.self)"
     }
     
+    class var preferredHeight: CGFloat {
+        return 40
+    }
+    
     //MARK: - Outlets
-    lazy var titleLabel: UILabel! = UILabel()
+    private lazy var titleLabel: UILabel! = UILabel()
+    
+    var title: String = "" {
+        didSet {
+            titleLabel.text = title
+        }
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        backgroundColor = .gray
+        backgroundColor = .lightGray
         setupViews()
     }
     
@@ -36,7 +46,6 @@ class SearchItemHeaderView: UICollectionReusableView {
     private func setupTitleLabel() {
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.font = UIFont.systemFont(ofSize: 18)
-        titleLabel.backgroundColor = .lightGray
         addSubview(titleLabel)
         
         // Constraints

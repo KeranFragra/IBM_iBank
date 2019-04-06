@@ -40,7 +40,12 @@ extension SearchResultsViewer: UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         switch kind {
         case UICollectionView.elementKindSectionHeader:
-            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: SearchItemHeaderView.identifier, for: indexPath)
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: SearchItemHeaderView.identifier, for: indexPath) as! SearchItemHeaderView
+            if let models = models {
+                let model = models[indexPath.section]
+                headerView.title = model.title ?? ""
+            }
+            
             return headerView
         case UICollectionView.elementKindSectionFooter:
             let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: SearchItemHeaderView.identifier, for: indexPath)
@@ -48,5 +53,9 @@ extension SearchResultsViewer: UICollectionViewDelegate, UICollectionViewDataSou
         default:
             assert(false, "Unexpected element kind")
         }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return CGSize(width: collectionView.frame.width, height: SearchItemHeaderView.preferredHeight)
     }
 }

@@ -39,8 +39,8 @@ class HomeViewer: BaseUIViewController {
     
     @objc
     func testHitButtonAction(_ sender: UIButton) {
-//        let viewer = InputScreenViewer()
-        let viewer = SearchResultsViewer()
+        let viewer = InputScreenViewer()
+//        let viewer = SearchResultsViewer()
         show(viewer, sender: self)
     }
 }
